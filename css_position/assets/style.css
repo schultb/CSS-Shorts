@@ -38,8 +38,9 @@ h2 {
 article {
 	margin: 20px auto 0 auto;
 	border-radius: 8px;
-	padding: 15px 25px 25px 25px;
+	padding: 15px 260px 25px 25px;
 	background-color: rgba(255,255,255,.65);
+	position: relative;
 }
 
 aside {
@@ -48,10 +49,16 @@ aside {
 	background-color: #233e72;
 	color: #fff;
 	border-radius: 10px;
+	position: absolute;
+	top: 65px;
+	right: 25px;
+	
 }
 
 aside img {
-
+	position: absolute;
+	top: -10px;
+	left: -12px;
 }
 
 aside h3 {
@@ -59,6 +66,7 @@ aside h3 {
 	font-weight: 700;
 	line-height: 1.2em;
 	margin: 0 0 10px 0;
+	position: relative;
 }
 
 aside p {
@@ -81,6 +89,9 @@ aside a {
 	text-transform: uppercase;
 	font-weight: 700;
 	border-radius: 7px;
+	position: absolute;
+	bottom: -4px;
+	right: -4px;
 }
 
 aside a::after {
@@ -92,7 +103,19 @@ aside a::after {
 /* media queries */
 
 @media screen and (max-width: 540px) {
+	article {
+		padding-right: 25px;
+	}
 
+	aside {
+		position: relative;
+		top: auto;
+		right: auto;
+	}
+
+	aside a {
+		position: static;
+	}
 	
 
 }
