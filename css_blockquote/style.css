@@ -39,10 +39,33 @@ blockquote {
 	margin: 50px auto 80px auto;
 	line-height: 1.3em;
 	color: #fff;
+	font-size: 1.6em;
+	position: relative;
+}
+
+blockquote::before {
+	content: "\201c";
+	font-size: 4.2em;
+	position: absolute;
+	left: -46px;
+	top: -15px;
+	color: rgba(255, 255, 255, .4);
+}
+
+blockquote::after {
+	content: "\201d";
+	font-size: 4.2em;
+	position: absolute;
+	bottom: -36px;
+	color: rgba(255, 255, 255, .4);
 }
 
 blockquote cite {
 	color: rgba(255,255,255,.4);
+	display: block;
+	font-size: .7em;
+	position: absolute;
+	bottom: -2.5em;
 }
 
 blockquote cite::before {
