@@ -43,7 +43,10 @@ h1 {
 	font-size: .9rem;
 	letter-spacing: 1px;
 	transition: color .3s, background-color .3s;
-	width: 33%;
+	width: 31%;
+	margin: 5px;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 #gallery > a:hover {
@@ -84,6 +87,10 @@ footer a:hover {
 
 	h1 {
 		letter-spacing: 10px;
+	}
+
+	#gallery > a {
+		width: 46%;
 	}
 
 }
