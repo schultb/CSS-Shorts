@@ -50,6 +50,29 @@ article {
 	line-height: 1.3em;
 }
 
+ul {
+	list-style: none;
+}
+
+li {
+	position: relative;
+	padding: 0 0 10px 0;
+}
+
+li::before {
+	content: '';
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-color: transparent #e4a150;
+	border-width: 5px 0 5px 12px;
+	position: absolute;
+	top: .3em;
+	left: -1.4em;
+
+
+}
 
 
 
