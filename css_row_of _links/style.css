@@ -53,13 +53,45 @@ article nav {
 	color: rgba(255,255,255,.6);
 }
 
+article nav div {
+	margin: 0 0 15px 100px;
+	position: relative;
+}
 
+article nav div::before {
+	font-size: .9em;
+	font-style: italic;
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	left: -100px;
+	width: 100px;
+}
 
+article nav div:nth-child(1)::before {
+	content: 'History';
+}
+
+article nav div:nth-child(2)::before {
+	content: 'Practices';
+}
 
 
 
 
 @media screen and (max-width: 500px) {
+	
+	article nav div {
+		margin-left: 0;
+		
+	}
+
+	article nav div::before {
+		position: static;
+		display: block;
+		
+	}
+
 	
 	
 	
