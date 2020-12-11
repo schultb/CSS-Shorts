@@ -79,7 +79,42 @@ label {
 	color: #aaa;
 }
 
+input {
+	display: none;
+}
 
+input#all:checked ~ label[for="all"],
+input#design:checked ~ label[for="design"],
+input#css:checked ~ label[for="css"],
+input#js:checked ~ label[for="js"] {
+	color: #000;
+	background-color: #eee;
+	border-color: #000;
+}
+
+input#design:checked ~ section a[data-skill~="design"] {
+	display: block;
+}
+
+input#design:checked ~ section a:not([data-skill~="design"]) {
+	display: none;
+}
+
+input#css:checked ~ section a[data-skill~="css"] {
+	display: block;
+}
+
+input#css:checked ~ section a:not([data-skill~="css"]) {
+	display: none;
+}
+
+input#js:checked ~ section a[data-skill~="js"] {
+	display: block;
+}
+
+input#js:checked ~ section a:not([data-skill~="js"]) {
+	display: none;
+}
 
 
 
