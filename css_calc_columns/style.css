@@ -31,6 +31,15 @@ header h1 {
 main { margin: 35px }
 main::after { content: ''; display: block; clear: both; }
 
+article {
+	width: calc(100% - 240px);
+	float: left;
+}
+
+aside {
+	width: 200 px;
+	float: right;
+}
 
 
 
