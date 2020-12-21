@@ -32,16 +32,16 @@ header p {
 }
 
 article {
-/*
+
 	display: flex;
 	flex-wrap: wrap;
-*/
+
 }
 
 article div {
 	margin: 0;
 	padding: 4px 4px 0 4px;
-/* 	width: 14.3%; */
+	width: 14.3%;
 	border: 1px solid #fff;
 	margin: -1px 0 0 -1px;
 	box-sizing: border-box;
@@ -57,9 +57,13 @@ article div p:first-of-type {
 	font-weight: 700;
 }
 
+article div:nth-child(7n+1) {
+background-color: rgba(255,255,255,.25);
+}
 
-
-
+article div:nth-child(7n+1) p:first-of-type{
+	color: #ffd966;
+}
 
 
 
