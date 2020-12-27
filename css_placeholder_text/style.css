@@ -65,7 +65,10 @@ form input[type="radio"] {
 	margin-right: 5px;
 }
 
-
+form input::placeholder,
+form textarea::placeholder  {
+	color: rgba(0, 0, 0, .8)
+}
 
 
 
