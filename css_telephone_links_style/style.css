@@ -49,6 +49,11 @@ a {
 	text-decoration: none;
 }
 
-
+a[href^="tel"] {
+	font-size: 1.1em;
+	background: url(images/icon_phone.svg) no-repeat 7px 7px;
+	background-size: 18px 18px;
+	padding: 7px 0px 7px 35px;
+}
 
 
