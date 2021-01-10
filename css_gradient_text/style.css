@@ -26,7 +26,15 @@ h1 {
 	font-size: 4rem;
 	text-align: center;
 	margin: 0 0 .3rem 0;
-	color: #fff;
+	color: transparent;
+	background: linear-gradient(
+		0deg,
+		rgb(52, 67, 93) 30%,
+		rgb(255, 239, 136) 50%,
+		rgb(252, 127, 83) 70%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
 }
 
 p {
