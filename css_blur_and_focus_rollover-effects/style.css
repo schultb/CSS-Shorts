@@ -31,11 +31,23 @@ h1 {
 	flex-wrap: wrap;
 	margin: 20px;
 }
+
+#gallery:hover a {
+	filter: blur(3px);
+	opacity: .55;
+}
+
 #gallery a {
 	display: inline-block;
 	width: 33%;
 	padding: 10px;
 	box-sizing: border-box;
+	transition: filter .45s, opacity .45s;
+}
+
+#gallery:hover a:hover {
+	filter: blur(0px);
+	opacity: 1;
 }
 
 #gallery a img {
