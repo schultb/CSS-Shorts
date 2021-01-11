@@ -58,12 +58,15 @@ main {
 article {
 	padding: 0 10px 0 0;
 	box-sizing: border-box;
+	width: 70%;
 }
 
 aside {
 	padding: 0 0 0 20px;
 	box-sizing: border-box;
-	border-left: 1px solid #888;	
+	border-left: 1px solid #888;
+	width: 30%;	
+	word-wrap: break-word;
 }
 
 aside p {
