@@ -17,7 +17,13 @@ body {
 	margin: 0;
 	padding: 55px;
 	text-align: center;
-	background: #555;
+	background-image: repeating-linear-gradient(
+		45deg,
+		#222,
+		#f61c1c 20px,
+		#444 20px,
+		#000 50% );
+	background-size: 40px 40px;
 }
 
 h1 {
@@ -29,7 +35,7 @@ h1 {
 }
 
 header {
-	background-color: #000;
+	background-color: rgba(0, 0, 0, .5);
 	padding: 5px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -40,6 +46,7 @@ article {
 	background-color: #fff;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
+	
 }
 
 
