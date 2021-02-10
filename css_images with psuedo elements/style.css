@@ -4,46 +4,37 @@
 */
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .gallery {
-	text-align: center;
-	padding: 20px 0 0 0;
+  text-align: center;
+  padding: 20px 0 0 0;
 }
 
 .gallery div {
-	display: inline-block;
-	width: 175px;
-	margin: 7px;
+  display: inline-block;
+  width: 175px;
+  margin: 7px;
+  position: relative;
 }
 
 .gallery div img {
-	width: 100%;
+  width: 100%;
+}
+.gallery div[data-status]::after {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: -7px;
+  width: 95px;
+  height: 35px;
 }
 
+.gallery div[data-status="new"]::after {
+  content: url(images/new.svg);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.gallery div[data-status="sale"]::after {
+	content: url(images/sale.svg);
